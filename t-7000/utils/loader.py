@@ -46,7 +46,7 @@ def get_bot_client(_prefix):
     Initiates bot and client classes
     '''
     intents = discord.Intents.all()
-    bot = commands.Bot(command_prefix=_prefix, description='''Shuddi, a bot that will keep your discord channel free of profanity!''', intents=intents)
+    bot = commands.Bot(command_prefix=_prefix, description='''A bot that will keep your discord channel free of profanity!''', intents=intents)
     client = discord.Client(intents=intents)
     _client = discord.Client(intents=intents)
     return bot, client, _client
